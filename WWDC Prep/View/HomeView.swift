@@ -12,8 +12,8 @@ struct HomeView: View {
     @ObservedObject var viewModel = GenerateChallengesViewModel()
     @State private var showTipsView = false
     @State private var showArticleView = false
-    @State private var text = ""
     @State private var showAdvantage = false
+    @State private var text = ""
     let currentDate = Date()
     
     var body: some View {
@@ -77,13 +77,14 @@ struct HomeView: View {
             }
             .navigationDestination(isPresented: $showTipsView) {
                 TipsView()
+                    .navigationTitle("Tips")
             }
             .navigationDestination(isPresented: $showArticleView) {
                 ArticleView()
+                    .navigationTitle("Articles")
             }
         }
     }
-    
     func currentDateString() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "MMMM d,yyyy"
