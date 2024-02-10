@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @ObservedObject var viewModel = GenerateChallengesViewModel()
+    @Namespace private var animation
     @State private var showTipsView = false
     @State private var showArticleView = false
     @State private var showAdvantage = false
@@ -57,32 +58,34 @@ struct HomeView: View {
                 ToolbarItem(placement: .navigationBarTrailing){
                     HStack{
                         Button{
-                            showTipsView = true
+                            withAnimation(.easeInOut(duration: 0.2)){
+                                showTipsView = true
+                            }
                         }label: {
                             Image(systemName: "lightbulb.max")
                                 .foregroundColor(.black)
                                 .frame(width: 30, height: 30)
-                                .bold()
+//                                .bold()
                         }
                         Button{
-                            showArticleView = true
+                            withAnimation(.easeInOut(duration: 0.2)){
+                                showArticleView = true
+                            }
                         }label: {
                             Image(systemName: "book")
                                 .foregroundColor(.black)
                                 .frame(width: 30, height: 30)
-                                .bold()
+//                                .bold()
                         }
                     }
                 }
             }
-            .navigationDestination(isPresented: $showTipsView) {
-                TipsView()
-                    .navigationTitle("Tips")
-            }
-            .navigationDestination(isPresented: $showArticleView) {
-                ArticleView()
-                    .navigationTitle("Articles")
-            }
+        }
+        .fullScreenCover(isPresented: $showTipsView) {
+            TipsView(show: $showTipsView)
+        }
+        .fullScreenCover(isPresented: $showArticleView) {
+            ArticleView(showArticle: $showArticleView, animation: animation)
         }
     }
     func currentDateString() -> String {

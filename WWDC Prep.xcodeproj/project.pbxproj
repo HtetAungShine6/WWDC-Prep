@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		B30DEE6D2B7687FF00F50DA4 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30DEE6C2B7687FF00F50DA4 /* Tips.swift */; };
 		B30DEE6F2B76903D00F50DA4 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30DEE6E2B76903D00F50DA4 /* Articles.swift */; };
-		B30DEE772B7695B600F50DA4 /* ArticleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30DEE762B7695B600F50DA4 /* ArticleDetailView.swift */; };
-		B30DEE7B2B76B06100F50DA4 /* CardViewForArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30DEE7A2B76B06100F50DA4 /* CardViewForArticle.swift */; };
+		B343A47E2B77C55500095382 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343A47D2B77C55500095382 /* DetailView.swift */; };
+		B343A4802B77C7FA00095382 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343A47F2B77C7FA00095382 /* RatingView.swift */; };
+		B343A4822B77C82600095382 /* ScrollViewDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343A4812B77C82600095382 /* ScrollViewDetector.swift */; };
+		B343A4842B77C85A00095382 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = B343A4832B77C85A00095382 /* CustomCorners.swift */; };
 		B3CE8AF62B75302F001BDD01 /* WWDC_PrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CE8AF52B75302F001BDD01 /* WWDC_PrepApp.swift */; };
 		B3CE8AF82B75302F001BDD01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CE8AF72B75302F001BDD01 /* HomeView.swift */; };
 		B3CE8AFA2B753030001BDD01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3CE8AF92B753030001BDD01 /* Assets.xcassets */; };
@@ -26,8 +28,10 @@
 /* Begin PBXFileReference section */
 		B30DEE6C2B7687FF00F50DA4 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 		B30DEE6E2B76903D00F50DA4 /* Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
-		B30DEE762B7695B600F50DA4 /* ArticleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailView.swift; sourceTree = "<group>"; };
-		B30DEE7A2B76B06100F50DA4 /* CardViewForArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewForArticle.swift; sourceTree = "<group>"; };
+		B343A47D2B77C55500095382 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B343A47F2B77C7FA00095382 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		B343A4812B77C82600095382 /* ScrollViewDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDetector.swift; sourceTree = "<group>"; };
+		B343A4832B77C85A00095382 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
 		B3CE8AF22B75302F001BDD01 /* WWDC Prep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WWDC Prep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3CE8AF52B75302F001BDD01 /* WWDC_PrepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC_PrepApp.swift; sourceTree = "<group>"; };
 		B3CE8AF72B75302F001BDD01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -115,8 +119,10 @@
 				B3CE8B052B753462001BDD01 /* ArticleView.swift */,
 				B3CE8B072B75434C001BDD01 /* ProgressBarView.swift */,
 				B3CE8B102B756AF8001BDD01 /* CardView.swift */,
-				B30DEE762B7695B600F50DA4 /* ArticleDetailView.swift */,
-				B30DEE7A2B76B06100F50DA4 /* CardViewForArticle.swift */,
+				B343A47D2B77C55500095382 /* DetailView.swift */,
+				B343A47F2B77C7FA00095382 /* RatingView.swift */,
+				B343A4812B77C82600095382 /* ScrollViewDetector.swift */,
+				B343A4832B77C85A00095382 /* CustomCorners.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -191,13 +197,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B30DEE772B7695B600F50DA4 /* ArticleDetailView.swift in Sources */,
 				B3CE8B042B753451001BDD01 /* TipsView.swift in Sources */,
 				B3CE8AF82B75302F001BDD01 /* HomeView.swift in Sources */,
 				B3CE8AF62B75302F001BDD01 /* WWDC_PrepApp.swift in Sources */,
 				B3CE8B062B753462001BDD01 /* ArticleView.swift in Sources */,
-				B30DEE7B2B76B06100F50DA4 /* CardViewForArticle.swift in Sources */,
+				B343A4842B77C85A00095382 /* CustomCorners.swift in Sources */,
 				B3CE8B0E2B754513001BDD01 /* GenerateChallengesViewModel.swift in Sources */,
+				B343A47E2B77C55500095382 /* DetailView.swift in Sources */,
+				B343A4822B77C82600095382 /* ScrollViewDetector.swift in Sources */,
+				B343A4802B77C7FA00095382 /* RatingView.swift in Sources */,
 				B3CE8B082B75434C001BDD01 /* ProgressBarView.swift in Sources */,
 				B30DEE6F2B76903D00F50DA4 /* Articles.swift in Sources */,
 				B3CE8B112B756AF8001BDD01 /* CardView.swift in Sources */,

@@ -8,20 +8,22 @@
 import SwiftUI
 
 struct CardView: View {
-    
     var text: String
     
     var body: some View {
         Text(text)
+            .font(.title3)
+            .fontWeight(.medium)
+            .foregroundColor(.white)
             .padding()
-            .foregroundColor(.black)
-            .background(Color.blue.opacity(0.1))
-            .cornerRadius(10)
-            .shadow(radius: 5)
-            .frame(maxWidth: .infinity, maxHeight: 500, alignment: .leading)
+            .frame(maxWidth: .infinity, minHeight: 100, maxHeight: .infinity, alignment: .center)
+            .background(LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .topLeading, endPoint: .bottomTrailing))
+            .cornerRadius(15)
+            .shadow(color: .gray, radius: 5, x: 0, y: 2)
             .padding(.horizontal)
     }
 }
-#Preview {
-    CardView(text: "Hello")
-}
+
+//#Preview {
+//    CardView(text: "Hello")
+//}

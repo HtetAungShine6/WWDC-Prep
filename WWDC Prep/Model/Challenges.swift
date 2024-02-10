@@ -48,7 +48,7 @@ extension Challenge{
         case "Walk or Bike for Short Distances":
             return "Reduces carbon emissions, improves air quality, and has health benefits due to increased physical activity."
         case "Eat More Plant-Based Meals":
-            return "owers greenhouse gas emissions associated with animal farming and reduces the ecological footprint of food production."
+            return "Lowers greenhouse gas emissions associated with animal farming and reduces the ecological footprint of food production."
         case "Turn Off Lights When Not in Use":
             return "Saves energy, reduces electricity bills, and decreases carbon dioxide emissions from power plants"
         case "Use Public Transportation":
