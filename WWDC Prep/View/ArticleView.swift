@@ -32,7 +32,7 @@ struct ArticleView: View {
 //                .padding([.leading, .vertical], 15)
 //                .frame(maxWidth: .infinity, alignment: .leading)
                 Text("Recommended Articles")
-                    .font(.largeTitle.bold())
+                    .font(.title2.bold())
 //                Text("Recommended")
 //                    .fontWeight(.semibold)
 //                    .padding(.leading, 15)
@@ -127,7 +127,7 @@ struct ArticleView: View {
                             .font(.caption)
                             .fontWeight(.semibold)
                             .foregroundColor(.blue)
-                        Text("Views")
+                        Text("Popularity")
                             .font(.caption)
                             .foregroundColor(.gray)
                         Spacer(minLength: 0)
@@ -179,20 +179,12 @@ struct ArticleView: View {
     }
 }
 
-//struct ArticleView: View {
-//    let articles: [Article] = Article.Articles
-//    var body: some View {
-//        NavigationStack {
-//            List(articles) { article in
-//                NavigationLink(destination: ArticleDetailView(article: article)) {
-//                    CardViewForArticle(article: article)
-//                }
-//            }
-//        }
-//    }
-//}
-//
-//
-//#Preview {
-//    ArticleView()
-//}
+struct ArticleView_Previews: PreviewProvider {
+    // Create a temporary namespace for the preview
+    @Namespace static var previewNamespace
+
+    static var previews: some View {
+        // Provide a constant binding and the namespace ID to the ArticleView
+        ArticleView(showArticle: .constant(true), animation: previewNamespace)
+    }
+}

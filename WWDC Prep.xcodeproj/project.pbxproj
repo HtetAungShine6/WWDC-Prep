@@ -23,6 +23,12 @@
 		B3CE8B0B2B754434001BDD01 /* Challenges.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CE8B0A2B754434001BDD01 /* Challenges.swift */; };
 		B3CE8B0E2B754513001BDD01 /* GenerateChallengesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CE8B0D2B754513001BDD01 /* GenerateChallengesViewModel.swift */; };
 		B3CE8B112B756AF8001BDD01 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CE8B102B756AF8001BDD01 /* CardView.swift */; };
+		B3F09C102B7AA72500D57E63 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F09C0F2B7AA72500D57E63 /* CustomAlertView.swift */; };
+		B3F09C122B7AA73A00D57E63 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F09C112B7AA73900D57E63 /* BlurView.swift */; };
+		B3F09C142B7B0D4400D57E63 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F09C132B7B0D4400D57E63 /* ProgressView.swift */; };
+		B3F09C162B7B122400D57E63 /* Quizzes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F09C152B7B122400D57E63 /* Quizzes.swift */; };
+		B3F09C182B7B15EE00D57E63 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F09C172B7B15EE00D57E63 /* QuizViewModel.swift */; };
+		B3F09C1A2B7B449200D57E63 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F09C192B7B449200D57E63 /* BarChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +49,12 @@
 		B3CE8B0A2B754434001BDD01 /* Challenges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenges.swift; sourceTree = "<group>"; };
 		B3CE8B0D2B754513001BDD01 /* GenerateChallengesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateChallengesViewModel.swift; sourceTree = "<group>"; };
 		B3CE8B102B756AF8001BDD01 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B3F09C0F2B7AA72500D57E63 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		B3F09C112B7AA73900D57E63 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		B3F09C132B7B0D4400D57E63 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		B3F09C152B7B122400D57E63 /* Quizzes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizzes.swift; sourceTree = "<group>"; };
+		B3F09C172B7B15EE00D57E63 /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		B3F09C192B7B449200D57E63 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,7 @@
 				B3CE8B0A2B754434001BDD01 /* Challenges.swift */,
 				B30DEE6C2B7687FF00F50DA4 /* Tips.swift */,
 				B30DEE6E2B76903D00F50DA4 /* Articles.swift */,
+				B3F09C152B7B122400D57E63 /* Quizzes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -106,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				B3CE8B0D2B754513001BDD01 /* GenerateChallengesViewModel.swift */,
+				B3F09C172B7B15EE00D57E63 /* QuizViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -123,6 +137,10 @@
 				B343A47F2B77C7FA00095382 /* RatingView.swift */,
 				B343A4812B77C82600095382 /* ScrollViewDetector.swift */,
 				B343A4832B77C85A00095382 /* CustomCorners.swift */,
+				B3F09C0F2B7AA72500D57E63 /* CustomAlertView.swift */,
+				B3F09C112B7AA73900D57E63 /* BlurView.swift */,
+				B3F09C132B7B0D4400D57E63 /* ProgressView.swift */,
+				B3F09C192B7B449200D57E63 /* BarChart.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,14 +215,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F09C102B7AA72500D57E63 /* CustomAlertView.swift in Sources */,
 				B3CE8B042B753451001BDD01 /* TipsView.swift in Sources */,
 				B3CE8AF82B75302F001BDD01 /* HomeView.swift in Sources */,
 				B3CE8AF62B75302F001BDD01 /* WWDC_PrepApp.swift in Sources */,
 				B3CE8B062B753462001BDD01 /* ArticleView.swift in Sources */,
 				B343A4842B77C85A00095382 /* CustomCorners.swift in Sources */,
+				B3F09C142B7B0D4400D57E63 /* ProgressView.swift in Sources */,
 				B3CE8B0E2B754513001BDD01 /* GenerateChallengesViewModel.swift in Sources */,
+				B3F09C1A2B7B449200D57E63 /* BarChart.swift in Sources */,
+				B3F09C182B7B15EE00D57E63 /* QuizViewModel.swift in Sources */,
 				B343A47E2B77C55500095382 /* DetailView.swift in Sources */,
 				B343A4822B77C82600095382 /* ScrollViewDetector.swift in Sources */,
+				B3F09C122B7AA73A00D57E63 /* BlurView.swift in Sources */,
+				B3F09C162B7B122400D57E63 /* Quizzes.swift in Sources */,
 				B343A4802B77C7FA00095382 /* RatingView.swift in Sources */,
 				B3CE8B082B75434C001BDD01 /* ProgressBarView.swift in Sources */,
 				B30DEE6F2B76903D00F50DA4 /* Articles.swift in Sources */,

@@ -89,36 +89,36 @@ struct DetailView: View {
     @ViewBuilder
     func BookDetails() -> some View{
         VStack(spacing: 0){
-            HStack(spacing: 0){
-                Button{
-                    
-                }label: {
-                    Label("Reviews", systemImage: "text.alignleft")
-                        .font(.callout)
-                        .foregroundColor(.gray)
-                }
-                .frame(maxWidth: .infinity)
-                Button{
-                    
-                }label: {
-                    Label("Like", systemImage: "suit.heart")
-                        .font(.callout)
-                        .foregroundColor(.gray)
-                }
-                .frame(maxWidth: .infinity)
-                Button{
-                    
-                }label: {
-                    Label("Share", systemImage: "square.and.arrow.up")
-                        .font(.callout)
-                        .foregroundColor(.gray)
-                }
-                .frame(maxWidth: .infinity)
-            }
+//            HStack(spacing: 0){
+//                Button{
+//                    
+//                }label: {
+//                    Label("Reviews", systemImage: "text.alignleft")
+//                        .font(.callout)
+//                        .foregroundColor(.gray)
+//                }
+//                .frame(maxWidth: .infinity)
+//                Button{
+//                    
+//                }label: {
+//                    Label("Like", systemImage: "suit.heart")
+//                        .font(.callout)
+//                        .foregroundColor(.gray)
+//                }
+//                .frame(maxWidth: .infinity)
+//                Button{
+//                    
+//                }label: {
+//                    Label("Share", systemImage: "square.and.arrow.up")
+//                        .font(.callout)
+//                        .foregroundColor(.gray)
+//                }
+//                .frame(maxWidth: .infinity)
+//            }
             Divider()
             ScrollView(.vertical, showsIndicators: false){
                 VStack(spacing: 15){
-                    Text("About the book")
+                    Text("About the article")
                         .font(.title3)
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity, alignment: .leading)

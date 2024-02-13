@@ -13,18 +13,22 @@ struct TipsView: View {
 
     var body: some View {
         VStack {
-            Button{
-                show = false
-            }label: {
-                Image(systemName: "chevron.left")
-                    .font(.title3)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.black)
-                    .contentShape(Rectangle())
+            HStack{
+                Button{
+                    show = false
+                }label: {
+                    Image(systemName: "chevron.left")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.black)
+                        .contentShape(Rectangle())
+                }
+                .padding()
+                Text("Daily Tips to save the Planet")
+                    .font(.title2.bold())
             }
-            .padding([.leading, .vertical], 15)
             .frame(maxWidth: .infinity, alignment: .leading)
-//            .opacity(animationContent ? 1 : 0)
+            .padding(.horizontal,15)
             TabView {
                 ForEach(tips) { tip in
                     VStack {

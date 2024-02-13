@@ -10,30 +10,32 @@ import Foundation
 struct Challenge: Identifiable, Codable, Hashable {
     let id: UUID
     var title: String
+    var icon: String
     var isCompleted: Bool
+    var date: Date
     
     static let allChallenges: [Challenge] = [
-        "Use Reusable Bags",
-        "Take Shorter Showers",
-        "Refuse Single-Use Plastics",
-        "Walk or Bike for Short Distances",
-        "Eat More Plant-Based Meals",
-        "Turn Off Lights When Not in Use",
-        "Use Public Transportation",
-        "Recycle Properly",
-        "Compost Food Scraps",
-        "Support Local Produce",
-        "Carry a Reusable Water Bottle",
-        "Use Energy-Efficient Appliances",
-        "Line-Dry Clothes",
-        "Reduce, Reuse, Recycle",
-        "Conduct a Home Energy Audit",
-        "Plant Trees or Support Tree Planting Initiatives",
-        "Reduce Meat Consumption",
-        "Invest in a Reusable Coffee Cup",
-        "Use Natural Light",
-        "Educate Yourself and Others"
-    ].enumerated().map { Challenge(id: UUID(), title: $1, isCompleted: false) }
+        Challenge(id: UUID(), title: "Use Reusable Bags", icon: "bag.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Take Shorter Showers", icon: "clock.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Refuse Single-Use Plastics", icon: "nosign", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Walk or Bike for Short Distances", icon: "figure.walk.circle.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Eat More Plant-Based Meals", icon: "leaf.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Turn Off Lights When Not in Use", icon: "lightbulb.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Use Public Transportation", icon: "bus.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Recycle Properly", icon: "arrow.3.trianglepath", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Compost Food Scraps", icon: "trash.circle.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Support Local Produce", icon: "cart.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Carry a Reusable Water Bottle", icon: "waterbottle.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Use Energy-Efficient Appliances", icon: "bolt.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Line-Dry Clothes", icon: "sun.max.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Reduce, Reuse, Recycle", icon: "arrow.3.trianglepath", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Conduct a Home Energy Audit", icon: "house.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Plant Trees or Support Tree Planting Initiatives", icon: "leaf.arrow.circlepath", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Reduce Meat Consumption", icon: "leaf.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Invest in a Reusable Coffee Cup", icon: "cup.and.saucer.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Use Natural Light", icon: "sun.max.fill", isCompleted: false, date: Date()),
+        Challenge(id: UUID(), title: "Educate Yourself and Others", icon: "books.vertical.fill", isCompleted: false, date: Date())
+    ]
 }
 
 extension Challenge{
